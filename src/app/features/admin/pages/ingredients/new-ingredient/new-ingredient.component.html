@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="ingredientForm" (ngSubmit)="addIngredient()">
+    <app-form-text-input
+      [control]="name"
+      [placeholder]="'The name of the category'"
+    ></app-form-text-input>
+    <app-form-text-input
+      [control]="image"
+      [placeholder]="'The image url'"
+    ></app-form-text-input>
+    <button type="submit">add</button>
+  </form>
+</div>

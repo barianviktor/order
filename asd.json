@@ -1,0 +1,54 @@
+{
+  "ingredients": [
+    {
+      "id": 0,
+      "name": "",
+      "image": 0
+    }
+  ],
+  "item": [
+    {
+      "id": 0,
+      "name": "",
+      "category": "",
+      "image": 0,
+      "ingredients": [],
+      "price": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": 0,
+      "order-items": [],
+      "table": 1
+    }
+  ],
+
+  "ordered-items": [
+    {
+      "id": 0,
+      "items": [],
+      "description": "",
+      "quantity": 1
+    }
+  ],
+  "images": [
+    {
+      "id": 0,
+      "path": "",
+      "created_at": ""
+    }
+  ],
+  "recomended-items": [
+    {
+      "category": 0,
+      "recomended": []
+    }
+  ]
+}

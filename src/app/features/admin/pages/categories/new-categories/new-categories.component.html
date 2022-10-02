@@ -1,0 +1,9 @@
+<div>
+  <form [formGroup]="categoryForm" (ngSubmit)="addCategory()">
+    <app-form-text-input
+      [control]="name"
+      [placeholder]="'The name of the category'"
+    ></app-form-text-input>
+    <button type="submit">add</button>
+  </form>
+</div>
