@@ -16,4 +16,7 @@ export class ImageService {
   getImages$() {
     return this.http.get(environment.api + '/images');
   }
+  getImage$(id: number): Observable<IImage> {
+    return this.http.get<IImage>(environment.api + '/images/' + id);
+  }
 }

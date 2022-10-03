@@ -1,0 +1,14 @@
+<div>
+  <div *ngIf="ingredients$ | async as ingredients">
+    <div
+      [class.selected]="array.getRawValue().includes(ingredient.id!)"
+      (click)="handleIngredient(ingredient.id!)"
+      *ngFor="let ingredient of ingredients"
+    >
+      <p>{{ ingredient.name }}</p>
+      <ng-container *ngIf="ingredient.image">
+        <img width="50px" [src]="ingredient.image.path" />
+      </ng-container>
+    </div>
+  </div>
+</div>

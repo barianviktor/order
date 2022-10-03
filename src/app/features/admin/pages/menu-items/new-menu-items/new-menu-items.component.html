@@ -1,0 +1,24 @@
+<div>
+  <form (ngSubmit)="handleSubmit()" [formGroup]="menuItemForm">
+    <app-categories-list [control]="category"></app-categories-list>
+    <app-ingredients-list [array]="ingredients"></app-ingredients-list>
+    <app-form-text-input [control]="image" [placeholder]="'Enter img url'">
+    </app-form-text-input>
+    <app-form-text-input
+      [control]="name"
+      [placeholder]="'Enter the name of the item'"
+    >
+    </app-form-text-input>
+
+    <app-form-text-input
+      [control]="description"
+      [placeholder]="'Enter the description of the item'"
+    >
+    </app-form-text-input>
+    <app-form-number-input
+      [control]="price"
+      [placeholder]="'please enter the price of the item'"
+    ></app-form-number-input>
+    <button type="submit">submit</button>
+  </form>
+</div>

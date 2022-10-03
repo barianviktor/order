@@ -1,0 +1,11 @@
+<div *ngIf="categories$ | async as categories">
+  <select (change)="handleCategoryChange($event)">
+    <option value=""></option>
+    <option [value]="category.id" *ngFor="let category of categories">
+      {{ category.name }}
+    </option>
+  </select>
+  <div *ngIf="control.invalid && control.touched" class="error-cont">
+    <p *ngIf="control.hasError('required')">Ezt a mezot kotelezo kitolteni</p>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <div *ngIf="menuItems$ | async as menuItems">
+    <div *ngFor="let menuItem of menuItems">
+      {{ menuItem | json }}
+    </div>
+  </div>
+</div>

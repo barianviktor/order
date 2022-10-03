@@ -1,0 +1,9 @@
+<div>
+  <app-custom-number-input
+    [control]="control"
+    [placeholder]="placeholder"
+  ></app-custom-number-input>
+  <div *ngIf="control.invalid && control.touched" class="error-cont">
+    <p *ngIf="control.hasError('required')">Ezt a mezot kotelezoo kitolteni</p>
+  </div>
+</div>

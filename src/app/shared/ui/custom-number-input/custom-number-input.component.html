@@ -1,0 +1,14 @@
+<label class="custom-field one">
+  <input
+    [class.valid-input]="control.valid"
+    [class.input-error]="control.invalid && control.touched"
+    type="number"
+    [formControl]="control"
+  />
+  <span
+    [class.placeholder-error]="control.invalid && control.touched"
+    [class.valid-placeholder]="control.valid"
+    class="placeholder"
+    >{{ placeholder }}</span
+  >
+</label>

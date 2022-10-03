@@ -13,7 +13,8 @@
       "category": "",
       "image": 0,
       "ingredients": [],
-      "price": 0
+      "price": 0,
+      "description": ""
     }
   ],
   "categories": [
@@ -27,6 +28,11 @@
       "id": 0,
       "order-items": [],
       "table": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": 0
     }
   ],
 
