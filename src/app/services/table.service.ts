@@ -12,4 +12,19 @@ export class TableService {
   getTables$(): Observable<ITable[]> {
     return this.http.get<ITable[]>(environment.api + '/tables');
   }
+  addTable$(table: ITable) {
+    return this.http.post(environment.api + '/tables', table);
+  }
+  locationsTables$(locationId: number) {
+    console.log(locationId);
+
+    return this.http.get<ITable[]>(environment.api + '/tables', {
+      params: {
+        location: locationId,
+      },
+    });
+  }
+  deleteTable$(id: number) {
+    return this.http.delete(environment.api + '/tables/' + id);
+  }
 }

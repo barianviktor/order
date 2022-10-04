@@ -1,0 +1,16 @@
+<div
+  [style.left]="table.sectionX + '%'"
+  [style.top]="table.sectionY + '%'"
+  (click)="handleSelect(table.id!)"
+  [class.select]="selected"
+  class="table-dot"
+>
+  <div class="table-nametag">
+    <p>
+      {{ table.name }}
+    </p>
+  </div>
+  <div class="table-middle-circle">
+    <div class="table-inner-circle"></div>
+  </div>
+</div>

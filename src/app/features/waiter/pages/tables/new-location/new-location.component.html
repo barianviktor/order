@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="addFormLocation" (ngSubmit)="handleSubmit()">
+    <app-form-text-input
+      [control]="name"
+      [placeholder]="'Locations name'"
+    ></app-form-text-input>
+    <app-form-text-input
+      [control]="floor_plan"
+      [placeholder]="'Floor Plan URL'"
+    ></app-form-text-input>
+    <button type="submit">add</button>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+<div *ngIf="tables$ | async as tables">
+  <div (click)="addTable($event)" class="image-container">
+    <app-table-dot [table]="table" *ngFor="let table of tables"></app-table-dot>
+    <img [src]="location.floor_plan.path" />
+  </div>
+  <div>
+    <div *ngFor="let table of tables">
+      <p>{{ table.name }}</p>
+      <button (click)="deleteTable(table.id!)">(╯°□°）╯︵ ┻━┻</button>
+    </div>
+  </div>
+</div>

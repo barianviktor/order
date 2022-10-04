@@ -7,6 +7,7 @@ import { FormTextInputComponent } from './component/form-text-input/form-text-in
 import { FormSelectInputComponent } from './component/form-select-input/form-select-input.component';
 import { FormNumberInputComponent } from './component/form-number-input/form-number-input.component';
 import { CustomNumberInputComponent } from './ui/custom-number-input/custom-number-input.component';
+import { TableDotComponent } from './ui/table-dot/table-dot.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CustomNumberInputComponent } from './ui/custom-number-input/custom-numb
     FormSelectInputComponent,
     FormNumberInputComponent,
     CustomNumberInputComponent,
+    TableDotComponent,
   ],
   imports: [CommonModule, HttpClientModule, ReactiveFormsModule],
   exports: [
@@ -26,6 +28,7 @@ import { CustomNumberInputComponent } from './ui/custom-number-input/custom-numb
     FormSelectInputComponent,
     FormNumberInputComponent,
     CustomNumberInputComponent,
+    TableDotComponent,
   ],
 })
 export class SharedModule {}

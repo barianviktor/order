@@ -1,0 +1,53 @@
+
+
+.table-dot{
+
+    width: 20px;
+    height: 20px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 50%;
+    position: absolute;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+    transition: all 0.1s ease;
+}
+.table-dot:hover{
+    background-color: rgb(240, 57, 57);
+    
+}
+.selected{
+    background-color: rgb(240, 57, 57);
+    
+}
+.table-middle-circle{
+    width: 14px;
+    height: 14px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+.table-inner-circle{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 50%;
+}
+
+.table-nametag{
+    position: absolute;
+    top: -35px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(32, 32, 32, 0.315);
+    font-size: 14px;
+    
+}
+.table-nametag p{
+    white-space: nowrap;
+
+}

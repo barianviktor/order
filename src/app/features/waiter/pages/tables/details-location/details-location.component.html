@@ -1,0 +1,5 @@
+<div>
+  <ng-container *ngIf="location$ | async as location">
+    <app-location-with-tables [location]="location"></app-location-with-tables>
+  </ng-container>
+</div>

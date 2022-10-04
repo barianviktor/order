@@ -1,0 +1,13 @@
+<div>
+  <div *ngIf="locations$ | async as locations">
+    <a *ngFor="let location of locations" [routerLink]="[location.id]">
+      <div>
+        <p>{{ location.name }}</p>
+        <img width="200px" [src]="location.floor_plan.path" />
+      </div>
+    </a>
+  </div>
+  <div>
+    <a [routerLink]="['new']">New Location</a>
+  </div>
+</div>
